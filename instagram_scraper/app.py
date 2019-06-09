@@ -1185,7 +1185,6 @@ class InstagramScraper(object):
         logger = logging.getLogger(__name__)
 
         dest +=  '/' if (dest !=  '') and dest[-1] != '/' else ''
-        print(dest)
         fh = logging.FileHandler(dest + 'instagram-scraper.log', 'w')
         fh.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
         fh.setLevel(level)
